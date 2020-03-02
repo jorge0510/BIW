@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  include partials/icons  
+  .row.m-0.p-1
+    .home-video-column
+      iframe(width="100%" height="480" src="https://www.youtube.com/embed/BOtV1GJgV4M?autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    .home-publicity-column 
+      div(style="background: #202020;height: 240px;")
+        .card-images
+          img.p-2(src="/images/BIW_Logo_Blanco.png", width="200", height="100")
+          .google-maps 
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.269015221627!2d-71.05461188454579!3d42.400716240525774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e36d025b9a89a9%3A0x71c449d4778ba907!2sBOSTON%20IRON%20WORKS!5e0!3m2!1sen!2sus!4v1580738592252!5m2!1sen!2sus" width="467" height="150" frameborder="0" style="border:0;" allowfullscreen="")
+    
+      .home-publicity-info.p-4
+          p.text-light For almost 100 years BOSTON IRONWORKS have provided a wide range of quality services to business and residential customers in Boston and New England. In that time we have built a reputation for excellence in service, quality, and safety.
+          h5.text-light Contact Us Today
+          div
+            p.text-light.m-0 ADDRESS: 
+              a(href="https://www.google.com/maps/place/BOSTON+IRON+WORKS/@42.4007123,-71.0546119,17z/data=!3m1!4b1!4m5!3m4!1s0x89e36d025b9a89a9:0x71c449d4778ba907!8m2!3d42.4007123!4d-71.0524232", target="_blank") 128 SPRINT ST EVERETT, MA 02149
+            p.text-light.m-0 
+              span PH: 
+              a(href="tel:781-599-3055") 781.599.3055 
+              span PH: 
+              a(href="tel:617-294-2694") 617.294.2694 
+              span FAX: 617 294-2714
+            p.text-light.m-0 E-MAIL: 
+              a(href="mailto:info@bostonironworks.com") INFO@BOSTONIRONWORKS.COM

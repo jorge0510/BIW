@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  .service-icons
+    include partials/icons
+  .service-title-mobile
+    .container
+      .row
+        center.col-md-12
+          h1(style="font-size:55px; color: #B5B5B5; padding-top:40px")  #{serviceId}- #{serviceName}
+          img.p-5(src=`/images/icons/${serviceId}.svg` width="100%")
+          
+  .service-title-desktop
+    .container
+      .row.p-3  
+        .col-md-4
+          img(src=`/images/icons/${serviceId}.svg` width="100%")
+        .col-md-8
+          .row
+            .col-md-5 
+              b(style="font-size:1000%; color: #B5B5B5") #{serviceId}
+            .col-md-7(style="padding-top: 40px;")
+              lu(style="color: #B5B5B5;line-height: 1;font-size: 16px;")
+                li Space saving
+                li Aesthetic appeal
+                li Highly functional
+                li Custom designed
+                li Perfect for open floor concepts
+                li Make large floor spaces more usable 
+                li Interest quotient
+                li Durable  
+                li Low maintenance
+          .row
+            .col-md-12
+              h1(style="font-size:500%; color: #B5B5B5") #{serviceName}
+  .row.p-5(style="background: #404040")
+    p.text-light They can be installed outdoors as well as indoors and are space-saving and stylish. We provide innovative solutions for all existing spaces including homes, retail stores, restaurants, theaters, office and other commercial buildings, government and public spaces as well as in small industry applications. We have been in this industry for close to 100 years and in this time have served thousands of customers.
+    p.text-light 100% Customer Satisfaction
+    p.text-light We are highly committed to every project we take up and if you are looking for metal spiral staircases, we can provide solutions that work perfectly for you. We work very closely with our customers, understand their needs and styling requirements evaluate the space available and then provide high functionality; low-maintenance and low-cost solutions that you will love to have on your property.
+    p.text-light The spiral staircases we manufacture can be as simple or elaborate, classic or modern in styling as you want them to be.
+    p.text-light Attention to Detail
+    p.text-light Spiral staircases are an excellent solution for the exterior of buildings- the products we manufacture are high in quality, robust in design and are finished in such a way that they provide a certain amount of traction to the feet- this makes them less slippery than conventional wooden staircases- this increases the safety factor.  If you own a commercial property and need to update the fire escape installation on your building, we can design, fabricate and install spiral staircases that meet all the local regulations
+    p.text-light End-to End Solutions
+    p.text-light Our staircases can be as elaborate or simple as you want them to be. We also focus on using materials and design concepts that blend in with the other elements and features in the existing space and can make our staircases as stylistic or unobtrusive as you like.  For expert and high quality end-to-end spiral staircases solutions, call Boston Ironworks with your requirement on 617 657 3117. You can also call us via this online form. You are assured of personalized attention and customized solutions that are right in line with your budget. 
+  
+  .service-icons-bottom
+    h2(style="color: #B5B5B5; padding-top:40px") More Services:
+    include partials/icons

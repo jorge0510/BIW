@@ -1,0 +1,52 @@
+.navbar.navbar-light.fixed-top.navbar-expand-lg.full-width(style="background-color: #202020")
+  .container-fluid
+    a.navbar-brand(href='/')
+      img.d-inline-block.align-top(src="/images/BIW_Logo_Blanco.png" width="90" height="45" alt="")
+
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='.navbar-collapse', style="background-color:white;")
+      span.sr-only Toggle navigation
+      span.navbar-toggler-icon
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li.nav-item(class=(title === 'Service-Bending') ? 'active' : undefined)
+          a.nav-link.text-light(href='/services/09') Shearing Bending
+        li.nav-item(class=(title === 'Service-Blasting') ? 'active' : undefined)
+          a.nav-link.text-light(href='/services/10') Sand Blasting
+        li.nav-item(class=(title === 'Testimonials') ? 'active' : undefined)
+          a.nav-link.text-light(href='https://www.google.com/search?source=hp&ei=_0c4XuKbM7SIytMP7bCl6AY&q=boston+iron+works&oq=boston+iron&gs_l=psy-ab.3.0.0l10.689.3271..4044...0.0..0.101.801.10j1......0....1..gws-wiz.......0i131j0i70i256.LZYGIk6iSkU#lrd=0x89e36d025b9a89a9:0x71c449d4778ba907,1,,,', target="_blank") Testimonials
+        li.nav-item(class=(title === 'Team') ? 'active' : undefined)
+          a.nav-link.text-light(href='/team') Our Team
+        //- li.nav-item(class=(title === 'Contact') ? 'active' : undefined)
+        //-   a.nav-link.text-light(href='/contact') Contact Us
+        li.nav-item(class=(title === 'FAQs') ? 'active' : undefined)
+          a.nav-link.text-light(href='/faq') FAQ
+      ul.nav.navbar-nav.ml-auto.d-flex.flex-row
+        li.nav-item
+          a.nav-link(href='https://www.facebook.com/bostonironworks/', target="_blank")
+            i.fab.fa-facebook.fa-lg.text-light
+        li.nav-item
+          a.nav-link(href='https://twitter.com/BostonIronWorks', target="_blank")
+            i.fab.fa-twitter.fa-lg.text-light
+        li.nav-item
+          a.nav-link(href='http://www.youtube.com/user/bostonironworks/videos', target="_blank")
+            i.fab.fa-youtube.fa-lg.text-light
+
+      //- ul.nav.navbar-nav.ml-auto
+      //-   if !user
+      //-     li.nav-item(class=(title === 'Login') ? 'active' : undefined)
+      //-       a.nav-link(href='/login') Login
+      //-     li.nav-item(class=(title === 'Create Account') ? 'active' : undefined)
+      //-       a.nav-link(href='/signup') Create Account
+      //-   else
+      //-     li.dropdown(class=(title === 'Account Management') ? 'active' : undefined).nav-item
+      //-       a.dropdown-toggle.nav-link(href='#', data-toggle='dropdown')
+      //-         if user.profile.picture
+      //-           img(src=user.profile.picture)
+      //-         else
+      //-           img(src=user.gravatar(60))
+      //-         span= user.profile.name || user.email || user.id
+      //-         i.caret
+      //-       div.dropdown-menu
+      //-         a.dropdown-item(href='/account') My Account
+      //-         div.dropdown-divider
+      //-         a.dropdown-item(href='/logout') Logout
